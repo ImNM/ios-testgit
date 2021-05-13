@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7B19A23264CED640090E1AE /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B19A22264CED640090E1AE /* DetailView.swift */; };
 		A7FF960F264CB640003EAA8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FF960E264CB640003EAA8D /* AppDelegate.swift */; };
 		A7FF9611264CB640003EAA8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FF9610264CB640003EAA8D /* SceneDelegate.swift */; };
 		A7FF9613264CB640003EAA8D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FF9612264CB640003EAA8D /* ContentView.swift */; };
 		A7FF9615264CB643003EAA8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7FF9614264CB643003EAA8D /* Assets.xcassets */; };
 		A7FF9618264CB643003EAA8D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7FF9617264CB643003EAA8D /* Preview Assets.xcassets */; };
 		A7FF961B264CB643003EAA8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7FF9619264CB643003EAA8D /* LaunchScreen.storyboard */; };
+		A7FF9624264CDC77003EAA8D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FF9623264CDC77003EAA8D /* NetworkManager.swift */; };
+		A7FF9626264CDEDC003EAA8D /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FF9625264CDEDC003EAA8D /* PostData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A7B19A22264CED640090E1AE /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		A7FF960B264CB640003EAA8D /* H4XOR News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "H4XOR News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7FF960E264CB640003EAA8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7FF9610264CB640003EAA8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		A7FF9617264CB643003EAA8D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A7FF961A264CB643003EAA8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7FF961C264CB643003EAA8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7FF9623264CDC77003EAA8D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A7FF9625264CDEDC003EAA8D /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A7B19A21264CED4B0090E1AE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A7FF9612264CB640003EAA8D /* ContentView.swift */,
+				A7B19A22264CED640090E1AE /* DetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		A7FF9602264CB640003EAA8D = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +71,10 @@
 		A7FF960D264CB640003EAA8D /* H4XOR News */ = {
 			isa = PBXGroup;
 			children = (
+				A7FF9622264CDC5F003EAA8D /* Models */,
 				A7FF960E264CB640003EAA8D /* AppDelegate.swift */,
 				A7FF9610264CB640003EAA8D /* SceneDelegate.swift */,
-				A7FF9612264CB640003EAA8D /* ContentView.swift */,
+				A7B19A21264CED4B0090E1AE /* Views */,
 				A7FF9614264CB643003EAA8D /* Assets.xcassets */,
 				A7FF9619264CB643003EAA8D /* LaunchScreen.storyboard */,
 				A7FF961C264CB643003EAA8D /* Info.plist */,
@@ -73,6 +89,15 @@
 				A7FF9617264CB643003EAA8D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A7FF9622264CDC5F003EAA8D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A7FF9623264CDC77003EAA8D /* NetworkManager.swift */,
+				A7FF9625264CDEDC003EAA8D /* PostData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +170,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7FF9626264CDEDC003EAA8D /* PostData.swift in Sources */,
+				A7B19A23264CED640090E1AE /* DetailView.swift in Sources */,
+				A7FF9624264CDC77003EAA8D /* NetworkManager.swift in Sources */,
 				A7FF960F264CB640003EAA8D /* AppDelegate.swift in Sources */,
 				A7FF9611264CB640003EAA8D /* SceneDelegate.swift in Sources */,
 				A7FF9613264CB640003EAA8D /* ContentView.swift in Sources */,
