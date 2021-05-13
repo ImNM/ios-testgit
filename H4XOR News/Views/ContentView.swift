@@ -25,7 +25,7 @@ struct ContentView: View {
                     })
                
             })
-            .navigationBarTitle("H4XOR NEWS")
+            .navigationBarTitle("H4XOR NEWS Branched")
         }
         .onAppear{
             self.networkManager.fetchData()
